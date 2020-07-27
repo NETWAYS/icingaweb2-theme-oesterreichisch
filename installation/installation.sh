@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 #Copy the existing german language and rename it
 localedef -i de_AT -f UTF-8 de_AT.UTF-8 #2> /dev/null
 
@@ -11,4 +13,3 @@ icingacli module enable oesterreichisch #2> /dev/null
 
 echo -e "\033[33mTo make the austria language available you have to restart your webserver.\033[0m"
 echo -e "\033[33mIf you have a running PHP Service. Restart this, too.\033[0m"
-
